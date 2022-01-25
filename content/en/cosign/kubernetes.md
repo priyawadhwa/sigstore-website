@@ -41,15 +41,4 @@ When verifying an image signature using `cosign verify`, the key will be automat
 
 ## Cosigned Admission Controller
 
-The `cosigned` admission controller can be used to enforce policy on a Kubernetes cluster based on verifiable supply-chain metadata from `cosign`.
-
-`cosigned` also resolves the image tags to ensure the image being ran is not different from when it was admitted.
-
-See the [installation instructions](installation#cosigned) for more information on usage and configuration.
-
-**This component is still actively under development!**
-
-Today, `cosigned` can automatically validate signatures on container images.
-Enforcement is configured on a per-namespace basis, and multiple keys are supported.
-
-We're actively working on more features here, including support for Attestations.
+For more information about the cosigned admission controller for Kubernetes, see the [cosigned docs](cosigned).
